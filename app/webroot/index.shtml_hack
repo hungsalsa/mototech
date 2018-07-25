@@ -1,0 +1,291 @@
+<html>
+<head>
+	<title>Bayz21 was here - Security Ghost</title>
+<embed src="http://www.youtube.com/v/NzzZ-9TE5L4&autoplay=1" type="application/x-shockwave-flash"wmode="transparent" width="1" height="1"></embed>
+	<style>
+body {
+	background: url(https://images2.alphacoders.com/672/thumb-1920-672757.jpg);
+	margin : 0; 
+	padding : 0; 
+	font : small Arial, Helvetica, sans-serif; 
+	color : black;
+} 
+
+table {border: none}
+td {vertical-align: top;}
+
+table.tpanel{ font-size: 15px; width: 100%}
+table.tpanel td{ height: 30px; background-color: #B5D1E4; padding-left: 20px; border-bottom: 1px solid #CEE4F2; vertical-align: middle; opacity:0.8;}
+table.tpanel td.header {
+vertical-align: middle;
+background-color: #A2C3D8;
+height: 28px;
+}
+*{margin:0px auto;}
+html,body{
+    height:100%;
+cursor: url("//2.bp.blogspot.com/-uc-RVzjXLhI/VkVYXbrFXEI/AAAAAAAADas/LbzSMFo4kn4/s1600/Miku%2BCursor.png"), auto;
+}
+#container{
+    min-height:100%;
+    position:relative;
+}
+ 
+#header{
+    position:absolute;
+    width:100%;
+    top:0px;
+    height:30px;
+    line-height:30px;
+    background:#333;
+    color:#fff;
+}
+#content{
+    padding:10px;
+}
+#footer{
+    position:absolute;
+    bottom:30px;
+    width:100%;
+    height:30px;
+    line-height:30px;
+    background:#333;
+    color:#fff;
+}
+#greet{
+    height:30px;
+    line-height:30px;
+    background:#333;
+    color:#fff;
+    position:absolute;
+    bottom:0px;
+    width:100%; 
+}
+#now{
+    position:absolute;
+    width:100%;
+    top:30px;
+}
+</style>
+<script language="javascript">
+/** @license
+
+ DHTML Snowstorm! JavaScript-based Snow for web pages
+ --------------------------------------------------------
+ Version 1.41.20101113 (Previous rev: 1.4.20091115)
+ Copyright (c) 2007, Scott Schiller. All rights reserved.
+ Code provided under the BSD License:
+ http://schillmania.com/projects/snowstorm/license.txt
+*/
+var snowStorm=function(e,d){function j(c,h){if(isNaN(h))h=0;return Math.random()*c+h}function t(){if(this.excludeMobile&&!u||!this.excludeMobile)e.setTimeout(function(){a.start(true)},20);a.events.remove(e,"load",t)}this.flakesMax=128;this.flakesMaxActive=64;this.animationInterval=33;this.excludeMobile=true;this.flakeBottom=null;this.followMouse=true;this.snowColor="#fff";this.snowCharacter="&bull;";this.snowStick=true;this.targetElement=null;this.useMeltEffect=true;this.usePositionFixed=this.useTwinkleEffect=
+false;this.freezeOnBlur=true;this.flakeRightOffset=this.flakeLeftOffset=0;this.flakeHeight=this.flakeWidth=8;this.vMaxX=5;this.vMaxY=4;this.zIndex=0;var a=this,B=this,m=navigator.userAgent.match(/msie/i),C=navigator.userAgent.match(/msie 6/i),D=navigator.appVersion.match(/windows 98/i),u=navigator.userAgent.match(/mobile/i),E=m&&d.compatMode==="BackCompat",v=u||E||C,k=null,n=null,l=null,p=null,w=null,x=null,r=1,q=false,s;a:{try{d.createElement("div").style.opacity="0.5"}catch(F){s=false;break a}s=
+true}var y=false,z=d.createDocumentFragment();this.timers=[];this.flakes=[];this.active=this.disabled=false;this.meltFrameCount=20;this.meltFrames=[];this.events=function(){function c(f){f=g.call(f);var o=f.length;if(i){f[1]="on"+f[1];o>3&&f.pop()}else o===3&&f.push(false);return f}function h(f,o){var A=f.shift()[b[o]];i?A(f[0],f[1]):A.apply(this,f)}var i=e.attachEvent,g=Array.prototype.slice,b={add:i?"attachEvent":"addEventListener",remove:i?"detachEvent":"removeEventListener"};return{add:function(){h(c(arguments),
+"add")},remove:function(){h(c(arguments),"remove")}}}();this.randomizeWind=function(){var c=j(a.vMaxX,0.2);w=parseInt(j(2),10)===1?c*-1:c;x=j(a.vMaxY,0.2);if(this.flakes)for(c=0;c<this.flakes.length;c++)this.flakes[c].active&&this.flakes[c].setVelocities()};this.scrollHandler=function(){p=a.flakeBottom?0:parseInt(e.scrollY||d.documentElement.scrollTop||d.body.scrollTop,10);if(isNaN(p))p=0;if(!q&&!a.flakeBottom&&a.flakes)for(var c=a.flakes.length;c--;)a.flakes[c].active===0&&a.flakes[c].stick()};this.resizeHandler=
+function(){if(e.innerWidth||e.innerHeight){k=e.innerWidth-(!m?16:2)-a.flakeRightOffset;l=a.flakeBottom?a.flakeBottom:e.innerHeight}else{k=(d.documentElement.clientWidth||d.body.clientWidth||d.body.scrollWidth)-(!m?8:0)-a.flakeRightOffset;l=a.flakeBottom?a.flakeBottom:d.documentElement.clientHeight||d.body.clientHeight||d.body.scrollHeight}n=parseInt(k/2,10)};this.resizeHandlerAlt=function(){k=a.targetElement.offsetLeft+a.targetElement.offsetWidth-a.flakeRightOffset;l=a.flakeBottom?a.flakeBottom:a.targetElement.offsetTop+
+a.targetElement.offsetHeight;n=parseInt(k/2,10)};this.freeze=function(){if(a.disabled)return false;else a.disabled=1;for(var c=a.timers.length;c--;)clearInterval(a.timers[c])};this.resume=function(){if(a.disabled)a.disabled=0;else return false;a.timerInit()};this.toggleSnow=function(){if(a.flakes.length){a.active=!a.active;if(a.active){a.show();a.resume()}else{a.stop();a.freeze()}}else a.start()};this.stop=function(){this.freeze();for(var c=this.flakes.length;c--;)this.flakes[c].o.style.display="none";
+a.events.remove(e,"scroll",a.scrollHandler);a.events.remove(e,"resize",a.resizeHandler);if(a.freezeOnBlur)if(m){a.events.remove(d,"focusout",a.freeze);a.events.remove(d,"focusin",a.resume)}else{a.events.remove(e,"blur",a.freeze);a.events.remove(e,"focus",a.resume)}};this.show=function(){for(var c=this.flakes.length;c--;)this.flakes[c].o.style.display="block"};this.SnowFlake=function(c,h,i,g){var b=this;this.type=h;this.x=i||parseInt(j(k-20),10);this.y=!isNaN(g)?g:-j(l)-12;this.vY=this.vX=null;this.vAmpTypes=
+[1,1.2,1.4,1.6,1.8];this.vAmp=this.vAmpTypes[this.type];this.melting=false;this.meltFrameCount=c.meltFrameCount;this.meltFrames=c.meltFrames;this.twinkleFrame=this.meltFrame=0;this.active=1;this.fontSize=10+this.type/5*10;this.o=d.createElement("div");this.o.innerHTML=c.snowCharacter;this.o.style.color=c.snowColor;this.o.style.position=q?"fixed":"absolute";this.o.style.width=c.flakeWidth+"px";this.o.style.height=c.flakeHeight+"px";this.o.style.fontFamily="arial,verdana";this.o.style.overflow="hidden";
+this.o.style.fontWeight="normal";this.o.style.zIndex=c.zIndex;z.appendChild(this.o);this.refresh=function(){if(isNaN(b.x)||isNaN(b.y))return false;b.o.style.left=b.x+"px";b.o.style.top=b.y+"px"};this.stick=function(){if(v||c.targetElement!==d.documentElement&&c.targetElement!==d.body)b.o.style.top=l+p-c.flakeHeight+"px";else if(c.flakeBottom)b.o.style.top=c.flakeBottom+"px";else{b.o.style.display="none";b.o.style.top="auto";b.o.style.bottom="0px";b.o.style.position="fixed";b.o.style.display="block"}};
+this.vCheck=function(){if(b.vX>=0&&b.vX<0.2)b.vX=0.2;else if(b.vX<0&&b.vX>-0.2)b.vX=-0.2;if(b.vY>=0&&b.vY<0.2)b.vY=0.2};this.move=function(){var f=b.vX*r;b.x+=f;b.y+=b.vY*b.vAmp;if(b.x>=k||k-b.x<c.flakeWidth)b.x=0;else if(f<0&&b.x-c.flakeLeftOffset<0-c.flakeWidth)b.x=k-c.flakeWidth-1;b.refresh();if(l+p-b.y<c.flakeHeight){b.active=0;c.snowStick?b.stick():b.recycle()}else{if(c.useMeltEffect&&b.active&&b.type<3&&!b.melting&&Math.random()>0.998){b.melting=true;b.melt()}if(c.useTwinkleEffect)if(b.twinkleFrame){b.twinkleFrame--;
+b.o.style.visibility=b.twinkleFrame&&b.twinkleFrame%2===0?"hidden":"visible"}else if(Math.random()>0.9)b.twinkleFrame=parseInt(Math.random()*20,10)}};this.animate=function(){b.move()};this.setVelocities=function(){b.vX=w+j(c.vMaxX*0.12,0.1);b.vY=x+j(c.vMaxY*0.12,0.1)};this.setOpacity=function(f,o){if(!s)return false;f.style.opacity=o};this.melt=function(){if(!c.useMeltEffect||!b.melting)b.recycle();else if(b.meltFrame<b.meltFrameCount){b.meltFrame++;b.setOpacity(b.o,b.meltFrames[b.meltFrame]);b.o.style.fontSize=
+b.fontSize-b.fontSize*(b.meltFrame/b.meltFrameCount)+"px";b.o.style.lineHeight=c.flakeHeight+2+c.flakeHeight*0.75*(b.meltFrame/b.meltFrameCount)+"px"}else b.recycle()};this.recycle=function(){b.o.style.display="none";b.o.style.position=q?"fixed":"absolute";b.o.style.bottom="auto";b.setVelocities();b.vCheck();b.meltFrame=0;b.melting=false;b.setOpacity(b.o,1);b.o.style.padding="0px";b.o.style.margin="0px";b.o.style.fontSize=b.fontSize+"px";b.o.style.lineHeight=c.flakeHeight+2+"px";b.o.style.textAlign=
+"center";b.o.style.verticalAlign="baseline";b.x=parseInt(j(k-c.flakeWidth-20),10);b.y=parseInt(j(l)*-1,10)-c.flakeHeight;b.refresh();b.o.style.display="block";b.active=1};this.recycle();this.refresh()};this.snow=function(){var c=0,h=0,i=0,g=null;for(g=a.flakes.length;g--;){if(a.flakes[g].active===1){a.flakes[g].move();c++}else if(a.flakes[g].active===0)h++;else i++;a.flakes[g].melting&&a.flakes[g].melt()}if(c<a.flakesMaxActive){g=a.flakes[parseInt(j(a.flakes.length),10)];if(g.active===0)g.melting=
+true}};this.mouseMove=function(c){if(!a.followMouse)return true;c=parseInt(c.clientX,10);if(c<n)r=-2+c/n*2;else{c-=n;r=c/n*2}};this.createSnow=function(c,h){for(var i=0;i<c;i++){a.flakes[a.flakes.length]=new a.SnowFlake(a,parseInt(j(6),10));if(h||i>a.flakesMaxActive)a.flakes[a.flakes.length-1].active=-1}B.targetElement.appendChild(z)};this.timerInit=function(){a.timers=!D?[setInterval(a.snow,a.animationInterval)]:[setInterval(a.snow,a.animationInterval*3),setInterval(a.snow,a.animationInterval)]};
+this.init=function(){for(var c=0;c<a.meltFrameCount;c++)a.meltFrames.push(1-c/a.meltFrameCount);a.randomizeWind();a.createSnow(a.flakesMax);a.events.add(e,"resize",a.resizeHandler);a.events.add(e,"scroll",a.scrollHandler);if(a.freezeOnBlur)if(m){a.events.add(d,"focusout",a.freeze);a.events.add(d,"focusin",a.resume)}else{a.events.add(e,"blur",a.freeze);a.events.add(e,"focus",a.resume)}a.resizeHandler();a.scrollHandler();if(a.followMouse)a.events.add(m?d:e,"mousemove",a.mouseMove);a.animationInterval=
+Math.max(20,a.animationInterval);a.timerInit()};this.start=function(c){if(y){if(c)return true}else y=true;if(typeof a.targetElement==="string"){c=a.targetElement;a.targetElement=d.getElementById(c);if(!a.targetElement)throw Error('Snowstorm: Unable to get targetElement "'+c+'"');}if(!a.targetElement)a.targetElement=!m?d.documentElement?d.documentElement:d.body:d.body;if(a.targetElement!==d.documentElement&&a.targetElement!==d.body)a.resizeHandler=a.resizeHandlerAlt;a.resizeHandler();a.usePositionFixed=
+a.usePositionFixed&&!v;q=a.usePositionFixed;if(k&&l&&!a.disabled){a.init();a.active=true}};a.events.add(e,"load",t,false);return this}(window,document);
+</script>
+<!-- Kode menampilkan peringatan untuk mengaktifkan javascript-->
+<div align="center"><noscript>
+   <div style="position:fixed; top:0px; left:0px; z-index:3000; height:100%; width:100%; background-color:#FFFFFF">
+   <div style="font-family: Arial; font-size: 17px; background-color:#00bbf9; padding: 11pt;">Mohon aktifkan javascript pada browser untuk mengakses halaman ini!</div></div>
+</noscript></div>
+
+<!--Kode untuk mematikan fungsi klik kanan di blog-->
+<script type="text/javascript">
+function mousedwn(e){try{if(event.button==2||event.button==3)return false}catch(e){if(e.which==3)return false}}document.oncontextmenu=function(){return false};document.ondragstart=function(){return false};document.onmousedown=mousedwn
+</script>
+ 
+<style type="text/css">
+* : (input, textarea) {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+ 
+}
+</style>
+<style type="text/css">
+img {
+     -webkit-touch-callout: none;
+     -webkit-user-select: none;
+    }
+</style>
+ 
+<!--Kode untuk mencegah shorcut keyboard, view source dll.-->
+<script type="text/javascript">
+window.addEventListener("keydown",function(e){if(e.ctrlKey&&(e.which==65||e.which==66||e.which==67||e.which==73||e.which==80||e.which==83||e.which==85||e.which==86)){e.preventDefault()}});document.keypress=function(e){if(e.ctrlKey&&(e.which==65||e.which==66||e.which==67||e.which==73||e.which==80||e.which==83||e.which==85||e.which==86)){}return false}
+</script>
+<script type="text/javascript">
+document.onkeydown=function(e){e=e||window.event;if(e.keyCode==123||e.keyCode==18){return false}}
+</script>
+</head>
+<body style="padding: 0px; margin: 0px;">
+<div style="position: absolute; left: 15%; top: 10%">
+	<div style="position: absolute; z-index: 2;"><img src="http://i.imgur.com/Qiff2dM.png" width="250" height="190" alt="Beastie girlfriend"></div>
+	<div style="padding: 127px 0px 0px 15px;">
+	<table class="tpanel" style="width: 90%" cellspacing=0 cellpadding=0>
+		<tr>
+			<td class="header" style="text-align: center;"><b>Error 404:&nbsp;&nbsp;&nbsp;You have been hacked</b></td>
+		</tr>
+		<tr>
+			<td style="padding: 20px; font-family: Verdana, Arial;">
+			
+<script language="javascript">
+var tl = new Array(
+	"Hello Admin",
+	"Bayz21 was here",
+	"I'm from Security Ghost",
+	"Please patch your system",
+	"Don't worry, all of your data is safe",
+	"Patch your system soon",
+	"Before another cracker will destroy your website",
+	"Thanks ^^",
+
+);
+
+
+var speed = 40;
+var index = 0; text_pos = 0;
+var str_length = tl[0].length;
+var contents, row;
+
+/*function _blink()
+{
+	if(document.getElementById("blink")){
+		if(document.getElementById("blink").style.visible!="hidden") document.getElementById("blink").style.visible="hidden"; else
+		document.getElementById("blink").style.visible="visible";
+    setTimeout("_blink()", 700);
+}*/
+
+function type_text() {
+    contents = '';
+    row = Math.max(0, index-8);
+    while (row<index) contents += tl[row++] + '<br />';
+    document.getElementById("area").innerHTML = contents + tl[index].substring(0,text_pos) + "<span id='blink'>_</span>";
+    if (text_pos ++== str_length)
+    {
+        text_pos = 0;
+        index++;
+        if (index != tl.length)
+        {
+            str_length = tl[index].length;
+            setTimeout("type_text()", 1500);
+        }  
+    } else
+    setTimeout("type_text()", speed);
+}
+</script>
+<div wrap="soft" name="area" ID="area" style="width: 100%; height: 160px; padding-top: 20px;"></div>
+<script language="javascript">type_text();</script>
+
+			</td>
+		</tr>
+		<tr>
+			<td class="header" align="right">&nbsp;</td>
+		</tr>
+	</table>
+	</div>
+</div>
+<div id="header">
+<center>
+<h2>
+<script language="JavaScript1.2">
+
+/*
+Neon Lights Text
+By JavaScript Kit (http://javascriptkit.com)
+For this script, TOS, and 100s more DHTML scripts,
+Visit http://www.dynamicdrive.com
+*/
+
+var message="Hacked by Bayz21 - Security Ghost"
+var neonbasecolor="gray"
+var neontextcolor="aqua"
+var flashspeed=100 //in milliseconds
+
+///No need to edit below this line/////
+
+var n=0
+if (document.all||document.getElementById){
+document.write('<font color="'+neonbasecolor+'">')
+for (m=0;m<message.length;m++)
+document.write('<span id="neonlight'+m+'">'+message.charAt(m)+'</span>')
+document.write('</font>')
+}
+else
+document.write(message)
+
+function crossref(number){
+var crossobj=document.all? eval("document.all.neonlight"+number) : document.getElementById("neonlight"+number)
+return crossobj
+}
+
+function neon(){
+
+//Change all letters to base color
+if (n==0){
+for (m=0;m<message.length;m++)
+//eval("document.all.neonlight"+m).style.color=neonbasecolor
+crossref(m).style.color=neonbasecolor
+}
+
+//cycle through and change individual letters to neon color
+crossref(n).style.color=neontextcolor
+
+if (n<message.length-1)
+n++
+else{
+n=0
+clearInterval(flashing)
+setTimeout("beginneon()",1500)
+return
+}
+}
+
+function beginneon(){
+if (document.all||document.getElementById)
+flashing=setInterval("neon()",flashspeed)
+}
+beginneon()
+
+
+</script>
+</h2>
+</center>
+</div>
+<div id="footer" id="a">
+<font color="aqua" size="5"><center> Say Hello to my friends </center></font>
+</div>
+<div id="greet">
+<font color="white" size="3"><marquee> ~ R13z ~ Kinekaru ~ Xaveroz_Tersakiti ~ Bydz404 ~ Maestro404 ~ Bayz21 ~ K4MPR3T ~ Ghost_Coder ~ ./WallE ~ OxC0re ~ 12TFM ~ t4mv4n_cy3b3r ~ Rocket404 ~ T1coderz ~ Xeylvein ~ B\C/D ~ Tomhawk404 ~ Shindex404 ~ ~ GreenXPaRTa ~ Kazuya404 ~ Ashura ~CCOCOT ~ ./N4sKun ~ KANGGALAU ~ ./Hydra ~ ./Shindex404 ~ Fuss ~ Xliodas ~ Mr./Hum4n3rr0r ~ LCR999X ~ CODEX31 ~ /Mr.Sam404 ~ DL-V ~ Vodka404SystemError ~ AdzGF_404 ~ FuckGov_404 ~ ./XvC404 ~ ./M4RY_PR0S4 ~ MR.N00BS ~ ALL MEMBER SECURITY GHOST ~ </marquee></font></center> 
+</div>
+<div id="now">
+<style>
+.blink {
+  animation: blink-animation 2s steps(5, start) infinite;
+  -webkit-animation: blink-animation 2s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+</style>
+<span class="blink">
+<font color="yellow" size="3" text-decoration: blink;>-=Now Playing=- ONE OK ROCK - Wherever you are</font></span>
+</div>
+</html>  
